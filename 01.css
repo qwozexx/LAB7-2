@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    padding-top: 70px; /* Отступ сверху, чтобы содержимое не было скрыто под шапкой */
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+    position: fixed; /* Шапка всегда видна */
+    top: 0; /* Шапка прикреплена к верхней части страницы */
+    width: 100%; /* Шапка занимает всю ширину страницы */
+}
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+.nav {
+    display: flex;
+    gap: 15px;
+}
+.nav a {
+    text-decoration: none;
+    color: #333;
+}
+.header-up {
+    top: -70px; /* Шапка скрывается вверху */
+    transition: top 2s; /* Плавное перемещение шапки */
+}
+.catalog {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.product img {
+    width: 100%;
+    height: 500px;
+
+    object-fit: cover; /* Это свойство обрезает изображение, чтобы оно заполнило контейнер, сохраняя пропорции */
+}
+.product a {
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+    font-family: Impact, fantasy;
+}
+h3{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* vh - это единица измерения, равная 1% от высоты видимой области */
+}
+
+.img {
+    max-width: 100%; /* чтобы изображение не выходило за пределы экрана */
+    max-height: 100%; /* чтобы изображение не выходило за пределы экрана */
+}
+.container {
+    display: flex; /* Используем Flexbox для выравнивания элементов по горизонтали */
+}
+
+.container img {
+    width: 75%; /* Изображение занимает половину ширины контейнера */
+    object-fit: cover; /* Изображение обрезается, чтобы заполнить контейнер, сохраняя пропорции */
+}
+
+.description {
+    font-family: URW Chancery L, cursive;
+    font-size: 25px;
+    width:25%; /* Описание занимает половину ширины контейнера */
+    padding: 20px; /* Добавляем отступы вокруг описания для лучшего вида */
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: grey;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
